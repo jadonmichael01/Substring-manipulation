@@ -1,15 +1,22 @@
-I understand that all homework assignments for this course are individual assignments. That is, I'm expected to work on the assignment alone. That is, no code sharing or co-development is allowed. Code sharing include having another student to look at your code, looking at another student's code, copying code from another student's work via the internet, or using solutions from an early version of this course. Co-development means that a student is writing the programs together with another person. 
+The given program demonstrates the usage of string manipulation functions (`insert_substring`, `delete_substring`, and `replace_substring`) defined in the "strops.h" header file. Here is a brief description of what the program does:
 
-I testify that I have worked by myself on this assignment and I did not share code or co-develop the program with anybody. 
+1. Initialization:
+   - The program initializes a character array `str` with the initial value "If you don’t like it, change it. If you can’t, ignore it."
 
-[JadonMichael De Jesus  10/19/22]
+2. Inserting Substrings:
+   - The program uses the `insert_substring` function to insert substrings into the `str` array at specific positions.
+   - It first inserts the substring "What I'd say: " at the beginning of `str` (position 0).
+   - Then it inserts the substring " Make sense?" at position 100 (which is beyond the original length of `str`).
+   - The modified `str` array is printed after each insertion.
 
-I understand that I'm allowed to look for solutions on the internet, as long as I clearly indicate the source of the solutions in my homework assignment. For this assignment, I incorporated the following from the Internet:
+3. Deleting Substrings:
+   - The program uses the `delete_substring` function to delete substrings from the `str` array.
+   - It attempts to delete the substrings "What ", " it", and "make" from `str` using the `delete_substring` function.
+   - The return value of the function is printed along with the modified `str` array after each deletion.
 
-[Put NONE or list the sources in the following format: 
+4. Replacing Substrings:
+   - The program uses the `replace_substring` function to replace substrings in the `str` array with new substrings.
+   - It replaces the substring "change" with "don't change", " change" with an empty string, and "make" with "fake".
+   - The return value of the function is printed along with the modified `str` array after each replacement.
 
-1) In strops.c, lines 21-30, I used the solution, but modified for this assignment, from [https://stackoverflow.com/questions/35631422/finding-substring-in-string-without-using-library-function]
-
-2) In strops.c, lines 49-57, I used the solution, but modified for this assignment, from [https://stackoverflow.com/questions/35631422/finding-substring-in-string-without-using-library-function]]
-
-
+The program demonstrates how to use the provided string manipulation functions to insert, delete, and replace substrings within a given string. It showcases the functionality of these operations by performing them on the `str` array and printing the results.
